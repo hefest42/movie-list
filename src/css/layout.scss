@@ -14,3 +14,12 @@ body {
     background-color: red;
     width: 100px;
 }
+
+.container {
+    background-color: teal;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-areas: "left right";
+}

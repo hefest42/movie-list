@@ -12,6 +12,7 @@ const AppContainer = (props) => {
                 <LeftColumnSearch />
                 <LeftColumnInputs />
             </div>
+
             <div className="container-right">test2</div>
         </div>
     );

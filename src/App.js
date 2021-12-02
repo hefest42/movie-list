@@ -1,10 +1,8 @@
-import "./App.css";
-
 import AppContainer from "./components/AppContainer";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <AppContainer />
     </div>
   );

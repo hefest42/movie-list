@@ -43,3 +43,12 @@
         }
     }
 }
+
+.left-column__theme {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: teal;
+    width: 15%;
+    height: 2rem;
+}

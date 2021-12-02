@@ -1,10 +1,16 @@
 import React from "react";
 
+import LabelInput from "./UI/LabelInput";
+
 const LeftColumnInputs = () => {
     return (
         <div className="left-column__inputs">
-            <label htmlFor="">test</label>
-            <input type="checkbox" />
+            <LabelInput name="test" title="Horror" />
+            <LabelInput name="test" title="Horror" />
+            <LabelInput name="test" title="Horror" />
+            <LabelInput name="test" title="Horror" />
+            <LabelInput name="test" title="Horror" />
+            <LabelInput name="test" title="Horror" />
         </div>
     );
 };

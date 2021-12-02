@@ -2,11 +2,11 @@ import React from "react";
 
 const LeftColumnSearch = () => {
     return (
-        <form>
-            <input type="text" name="" id="" />
+        <form className="left-column__search">
+            <input type="text" placeholder="Search..." />
             <div>
                 <button>Search</button>
-                <button>Reset</button>
+                {/* <button>Reset</button> */}
             </div>
         </form>
     );

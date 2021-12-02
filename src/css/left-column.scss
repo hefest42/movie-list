@@ -28,7 +28,16 @@
 }
 
 .left-column__inputs {
-    background-color: violet;
     width: 80%;
     margin-top: 2.5rem;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.3rem;
+
+        label {
+            font-size: 1.2rem;
+        }
+    }
 }

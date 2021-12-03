@@ -1,17 +1,10 @@
 import React from "react";
 
-const LeftColumnTheme = () => {
+const LeftColumnTheme = ({ changeMode }) => {
     return (
         <div className="left-column__theme">
             <div className="theme-title">Light/Dark</div>
-            <div class="switch-wrapper">
-                <label>
-                    <input class="switch" type="checkbox" />
-                    <div>
-                        <div></div>
-                    </div>
-                </label>
-            </div>
+            <input id="s1d" type="checkbox" class="switch" onClick={changeMode} />
         </div>
     );
 };

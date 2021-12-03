@@ -24,6 +24,7 @@ html {
     &-left {
         width: 15%;
         border-right: 1px solid $main-color;
+        font-weight: bold;
 
         display: flex;
         flex-direction: column;

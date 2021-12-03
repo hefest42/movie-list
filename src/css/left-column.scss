@@ -45,6 +45,7 @@
     div {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin-top: 0.3rem;
 
         label {
@@ -64,6 +65,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    #s1d {
+        margin-right: 0.5rem;
+    }
 
     @media screen and (max-width: 1000px) {
         width: 26%;

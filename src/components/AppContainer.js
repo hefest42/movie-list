@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import LeftColumnTitle from "./LeftColumnTitle";
 import LeftColumnSearch from "./LeftColumnSearch";
@@ -6,13 +6,20 @@ import LeftColumnInputs from "./LeftColumnInputs";
 import LeftColumnTheme from "./LeftColumnTheme";
 
 const AppContainer = (props) => {
+    const [darkMode, setDarkMode] = useState(false);
+
+    //changing light/dark mode
+    const darkModeHandler = () => {
+        setDarkMode((state) => !state);
+    };
+
     return (
-        <div className="container">
+        <div className={!darkMode ? "container" : "container-dark"}>
             <div className="container-left">
                 <LeftColumnTitle />
                 <LeftColumnSearch />
                 <LeftColumnInputs />
-                <LeftColumnTheme />
+                <LeftColumnTheme changeMode={darkModeHandler} />
             </div>
 
             <div className="container-right">test2</div>

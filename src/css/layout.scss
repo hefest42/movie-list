@@ -34,4 +34,10 @@ html {
     &-right {
         width: 85%;
     }
+
+    @media screen and (max-width: 1000px) {
+        &-left {
+            width: 30%;
+        }
+    }
 }

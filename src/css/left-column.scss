@@ -39,6 +39,7 @@
 
 .left-column__inputs {
     width: 80%;
+    max-height: 40rem;
     margin-top: 2.5rem;
 
     div {
@@ -62,10 +63,21 @@
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 1000px) {
+        width: 26%;
+    }
+}
+
+.theme-title {
+    margin-left: 0.5rem;
 }
 
 // LIGHT/DARK MODE SWITCH
 .switch-wrapper {
+    margin-right: 0.5rem;
+
     display: grid;
     place-content: center;
     min-height: 100%;

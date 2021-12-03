@@ -1,7 +1,19 @@
 import React from "react";
 
 const LeftColumnTheme = () => {
-    return <div className="left-column__theme"></div>;
+    return (
+        <div className="left-column__theme">
+            <div>Light/Dark</div>
+            <div class="switch-wrapper">
+                <label>
+                    <input class="switch" type="checkbox" />
+                    <div>
+                        <div></div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    );
 };
 
 export default LeftColumnTheme;

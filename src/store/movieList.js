@@ -875,5 +875,185 @@ export const movieList = [
             poster: "https://m.media-amazon.com/images/M/MV5BOWUzYzBjNjAtN2RlNC00YWE5LThlMDEtMjhlOTQwYTY4NTlmXkEyXkFqcGdeQXVyMTI5Nzk4NDQ4._V1_FMjpg_UX1000_.jpg"
         },
     },
+    {
+        id: "movie56",
+        name: "Eyes Wide Shut",
+        releaseYear: "1999",
+        runtime: "2h 39m",
+        director: ["Stanley Kubrick"],
+        actors: ["Tom Cruise", "Nicole Kidman", "Todd Field", "Sydney Pollack", "madison Eginton", "Jackie Sawiris"],
+        writers: ["Stanley Kubrick", "Frederic Raphael", "Arthur Schnitzler"],
+        genre: ["Drama", "Mystery", "Thriller"],
+        links: {
+            imdb: "https://www.imdb.com/title/tt0120663/",
+            rottenTomatoes: "https://www.rottentomatoes.com/m/eyes_wide_shut",
+            poster: "https://flxt.tmsimg.com/assets/p23544_p_v13_av.jpg",
+        }
+    },
+    {
+        id: "movie57",
+        name: "Porco Rosso",
+        releaseYear: "1992",
+        runtime: "1h 34m",
+        director: ["Hayao Miyazaki"],
+        actors: ["Shûichirô Moriyama", "Tokiko Katô", "Bunshi Katsura Vi", "Tsunehiko Kamijô", "Akemi Okamura", "Akio Ôtsuka"],
+        writers: ["Hayao Miyazaki"],
+        genre: ["Animation", "Adventure", "Comedy"],
+        links: {
+            imdb: "https://www.imdb.com/title/tt0104652/",
+            rottenTomatoes: "https://www.rottentomatoes.com/m/porco_rosso",
+            poster: "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/4463b1a9af706a0f148357eb00f77aceec3447ebf543c7b48508145052200394._RI_V_TTW_.jpg",
+        }
+    },
+    {
+        id: "movie58",
+        name: "Princess Mononoke",
+        releaseYear: "1997",
+        runtime: "2h 14m",
+        director: ["Hayao Miyazaki"],
+        actors: ["Yôji Matsuda", "Yuriko Ishida", "Yûko Tanaka", "Billy Crudup", "Billy Bob Thornton", "Minnie Driver", "John DiMaggio", "Claire Danes"],
+        writers: ["Hayao Miyazaki"],
+        genre: ["Animation", "Action", "Adventure"],
+        links: {
+            imdb: "https://www.imdb.com/title/tt0119698/",
+            rottenTomatoes: "https://www.rottentomatoes.com/m/princess_mononoke_1999",
+            poster: "https://images-na.ssl-images-amazon.com/images/I/81jSJRqb9IL.jpg",
+        }
+    },
+    {
+        id: "movie1",
+        name: "Rising Arizona",
+        releaseYear: "",
+        runtime: "",
+        director: "",
+        actors: "",
+        writers: "",
+        genre: "",
+        links: {
+            imdb: "",
+            rottenTomatoes: "",
+            poster: "",
+        }
+    },
+    {
+        id: "movie1",
+        name: "Rising Arizona",
+        releaseYear: "",
+        runtime: "",
+        director: "",
+        actors: "",
+        writers: "",
+        genre: "",
+        links: {
+            imdb: "",
+            rottenTomatoes: "",
+            poster: "",
+        }
+    },
+    {
+        id: "movie1",
+        name: "Rising Arizona",
+        releaseYear: "",
+        runtime: "",
+        director: "",
+        actors: "",
+        writers: "",
+        genre: "",
+        links: {
+            imdb: "",
+            rottenTomatoes: "",
+            poster: "",
+        }
+    },
+    {
+        id: "movie1",
+        name: "Rising Arizona",
+        releaseYear: "",
+        runtime: "",
+        director: "",
+        actors: "",
+        writers: "",
+        genre: "",
+        links: {
+            imdb: "",
+            rottenTomatoes: "",
+            poster: "",
+        }
+    },
+    {
+        id: "movie1",
+        name: "Rising Arizona",
+        releaseYear: "",
+        runtime: "",
+        director: "",
+        actors: "",
+        writers: "",
+        genre: "",
+        links: {
+            imdb: "",
+            rottenTomatoes: "",
+            poster: "",
+        }
+    },
+    {
+        id: "movie1",
+        name: "Rising Arizona",
+        releaseYear: "",
+        runtime: "",
+        director: "",
+        actors: "",
+        writers: "",
+        genre: "",
+        links: {
+            imdb: "",
+            rottenTomatoes: "",
+            poster: "",
+        }
+    },
+    {
+        id: "movie1",
+        name: "Rising Arizona",
+        releaseYear: "",
+        runtime: "",
+        director: "",
+        actors: "",
+        writers: "",
+        genre: "",
+        links: {
+            imdb: "",
+            rottenTomatoes: "",
+            poster: "",
+        }
+    },
+    {
+        id: "movie1",
+        name: "Rising Arizona",
+        releaseYear: "",
+        runtime: "",
+        director: "",
+        actors: "",
+        writers: "",
+        genre: "",
+        links: {
+            imdb: "",
+            rottenTomatoes: "",
+            poster: "",
+        }
+    },
+    {
+        id: "movie1",
+        name: "Rising Arizona",
+        releaseYear: "",
+        runtime: "",
+        director: "",
+        actors: "",
+        writers: "",
+        genre: "",
+        links: {
+            imdb: "",
+            rottenTomatoes: "",
+            poster: "",
+        }
+    },
     
 ];

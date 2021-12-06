@@ -4,6 +4,7 @@ import LeftColumnTitle from "./LeftColumnTitle";
 import LeftColumnSearch from "./LeftColumnSearch";
 import LeftColumnInputs from "./LeftColumnInputs";
 import LeftColumnTheme from "./LeftColumnTheme";
+import MoviePoster from "./MoviePoster";
 
 const AppContainer = (props) => {
     const [darkMode, setDarkMode] = useState(false);
@@ -22,7 +23,10 @@ const AppContainer = (props) => {
                 <LeftColumnTheme changeMode={darkModeHandler} />
             </div>
 
-            <div className="container-right">test2</div>
+            <div className="container-right">
+                <MoviePoster />
+                <MoviePoster />
+            </div>
         </div>
     );
 };

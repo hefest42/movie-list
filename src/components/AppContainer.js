@@ -25,7 +25,6 @@ const AppContainer = (props) => {
 
             <div className="container-right">
                 <MoviePoster />
-                <MoviePoster />
             </div>
         </div>
     );

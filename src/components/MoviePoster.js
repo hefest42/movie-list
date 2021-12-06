@@ -4,9 +4,16 @@ const MoviePoster = ({ posterLink }) => {
     const [posterActive, setPosterActive] = useState(false);
 
     return (
-        //prettier-ignore
         <div className="poster-container">
-            <div className="poster">
+            <div
+                className={!posterActive ? "poster" : "poster poster-active"}
+                onMouseEnter={() => {
+                    setPosterActive(true);
+                }}
+                onMouseLeave={() => {
+                    setPosterActive(false);
+                }}
+            >
                 <img src={posterLink} alt="test" />
             </div>
 

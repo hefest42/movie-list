@@ -10,8 +10,12 @@ export const movieList = [
         writers: ["Joel Coen", "Ethan Coen"],
         actors: ["Nicolas Cage","Holly Hunter","Trey Wilson","John Goodman","William Forsythe","Sam McMurray","Frances McDormand",],
         genre: ["comedy", "crime"],
-        poster: "https://m.media-amazon.com/images/M/MV5BOGUwZTEwZTYtZmQ0OS00NmM1LWE2ZTQtNjZiYmE4ZmUxMjk1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
-        links: ["https://www.imdb.com/title/tt0093822/", "https://www.rottentomatoes.com/m/raising_arizona"],
+        links: {
+            imdb: "https://www.imdb.com/title/tt0093822/",
+            rottenTomatoes: "https://www.rottentomatoes.com/m/raising_arizona",
+            poster:"https://m.media-amazon.com/images/M/MV5BOGUwZTEwZTYtZmQ0OS00NmM1LWE2ZTQtNjZiYmE4ZmUxMjk1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg" ,
+        }
+
     },
     {
         id: "movie2",
@@ -23,8 +27,11 @@ export const movieList = [
         writers: ["Homer", "David Benioff"],
         actors: ["Brad Pitt", "Eric Bana", "Orlando Bloom", "Julian Glover", "Brian Cox", "Nathan Jones", "Adoni Maropis", "Diane Kruger", "Sean Bean", "Garrett Hedlund"],
         genre: ["Drama", "History"],
-        poster: "https://www.google.com/search?q=troy&rlz=1C1GCEA_enRS982RS982&sxsrf=AOaemvJGluvsC-l10Bj3UVXBr3A5P_HsKw:1638539325849&tbm=isch&source=iu&ictx=1&fir=L467Cuw1gJr5KM%252CMuimAWKOrdxauM%252C%252Fm%252F01vw8k%253B2EcXFHHwnC0jjM%252CerWJWK99oe78fM%252C_%253BQfTCrxDxu-8pRM%252C48HO_ko48qGUpM%252C_%253BQD_gx5jDkh2rJM%252CC5aCWaXdPRsQCM%252C_%253BGfWVY29oJrrERM%252CQbhuRH9LHqJPFM%252C_%253B0TwwHP9O1hfJeM%252CecQ2xOnISafubM%252C_%253B1P6Ga4qM-eMg-M%252C3wtzHnscBIvSgM%252C_%253BxkUmfJ8u_yiBPM%252CeNJzDIZ4rpMiNM%252C_&vet=1&usg=AI4_-kTp2oPEiYYLjSHBZvZlG0X4s59i3w&sa=X&ved=2ahUKEwirp97T4sf0AhX1g_0HHWkeCo8Q_B16BAhgEAE#imgrc=2EcXFHHwnC0jjM",
-        links: ["https://www.imdb.com/title/tt0332452/", "https://www.rottentomatoes.com/m/troy"],
+        links: {
+            imdb: "https://www.imdb.com/title/tt0332452/",
+            rottenTomatoes: "https://www.rottentomatoes.com/m/troy",
+            poster:"https://www.google.com/search?q=troy&rlz=1C1GCEA_enRS982RS982&sxsrf=AOaemvJGluvsC-l10Bj3UVXBr3A5P_HsKw:1638539325849&tbm=isch&source=iu&ictx=1&fir=L467Cuw1gJr5KM%252CMuimAWKOrdxauM%252C%252Fm%252F01vw8k%253B2EcXFHHwnC0jjM%252CerWJWK99oe78fM%252C_%253BQfTCrxDxu-8pRM%252C48HO_ko48qGUpM%252C_%253BQD_gx5jDkh2rJM%252CC5aCWaXdPRsQCM%252C_%253BGfWVY29oJrrERM%252CQbhuRH9LHqJPFM%252C_%253B0TwwHP9O1hfJeM%252CecQ2xOnISafubM%252C_%253B1P6Ga4qM-eMg-M%252C3wtzHnscBIvSgM%252C_%253BxkUmfJ8u_yiBPM%252CeNJzDIZ4rpMiNM%252C_&vet=1&usg=AI4_-kTp2oPEiYYLjSHBZvZlG0X4s59i3w&sa=X&ved=2ahUKEwirp97T4sf0AhX1g_0HHWkeCo8Q_B16BAhgEAE#imgrc=2EcXFHHwnC0jjM" ,
+        }
     },
     {
         id: "movie3",
@@ -1051,21 +1058,21 @@ export const movieList = [
             poster: "https://www.cuopm.com/wp-content/uploads/2021/10/1-1.jpeg",
         }
     },
-    {
-        id: "movie1",
-        name: "Rising Arizona",
-        releaseYear: "",
-        runtime: "",
-        summary: "",
-        director: "",
-        actors: "",
-        writers: "",
-        genre: "",
-        links: {
-            imdb: "",
-            rottenTomatoes: "",
-            poster: "",
-        }
-    },
+    // {
+    //     id: "movie1",
+    //     name: "Rising Arizona",
+    //     releaseYear: "",
+    //     runtime: "",
+    //     summary: "",
+    //     director: "",
+    //     actors: "",
+    //     writers: "",
+    //     genre: "",
+    //     links: {
+    //         imdb: "",
+    //         rottenTomatoes: "",
+    //         poster: "",
+    //     }
+    // },
     
 ];

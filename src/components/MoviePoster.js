@@ -17,7 +17,7 @@ const MoviePoster = ({ posterLink }) => {
                 <img src={posterLink} alt="test" />
             </div>
 
-            <div className="poster-title">Movie Title</div>
+            <div className={!posterActive ? "poster-title" : "poster-title poster-title-active"}>Movie Title</div>
         </div>
     );
 };

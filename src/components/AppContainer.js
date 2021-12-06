@@ -25,6 +25,10 @@ const AppContainer = (props) => {
 
             <div className="container-right">
                 <MoviePoster />
+                <MoviePoster />
+                <MoviePoster />
+                <MoviePoster />
+                <MoviePoster />
             </div>
         </div>
     );

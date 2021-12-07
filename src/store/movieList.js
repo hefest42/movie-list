@@ -9,7 +9,7 @@ export const movieList = [
         director: ["Joel Coen", "Ethan Coen"],
         writers: ["Joel Coen", "Ethan Coen"],
         actors: ["Nicolas Cage","Holly Hunter","Trey Wilson","John Goodman","William Forsythe","Sam McMurray","Frances McDormand",],
-        genre: ["comedy", "crime"],
+        genre: ["Comedy", "Crime"],
         links: {
             imdb: "https://www.imdb.com/title/tt0093822/",
             rottenTomatoes: "https://www.rottentomatoes.com/m/raising_arizona",

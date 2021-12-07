@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import LeftColumnTitle from "./LeftColumnTitle";
 import LeftColumnSearch from "./LeftColumnSearch";
-import LeftColumnInputs from "./LeftColumnInputs";
+import LeftColumnInputs from "./LeftColumnGenres";
 import LeftColumnTheme from "./LeftColumnTheme";
 import MoviePoster from "./MoviePoster";
 

@@ -59,7 +59,7 @@
     left: 0;
     bottom: 0;
 
-    width: 15%;
+    width: 18rem;
     height: 2rem;
 
     display: flex;
@@ -71,7 +71,7 @@
     }
 
     @media screen and (max-width: 1000px) {
-        width: 26%;
+        width: 18rem;
     }
 }
 

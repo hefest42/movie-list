@@ -8,8 +8,6 @@ const LabelInput = ({ name, title }) => {
     const inputRef = useRef();
 
     const inputHandler = () => {
-        console.log(inputRef.current.checked);
-
         if (!inputRef.current.checked) dispatch(removeCheckedGenres(inputRef.current.name));
         if (inputRef.current.checked) dispatch(getCheckedGeneres(inputRef.current.name));
     };

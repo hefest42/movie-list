@@ -6,11 +6,18 @@ const movieSearchSlice = createSlice({
     name: "movieSearch",
     initialState: {
         allMovies: movieList,
-        filteredMovies: [],
+        checkedGenres: [],
     },
-    reducers: {},
+    reducers: {
+        getCheckedGeneres(state, action) {
+            state.checkedGenres.push(action.payload);
+        },
+        removeCheckedGenres(state, action) {
+            state.checkedGenres.filter((genre) => genre === action.payload);
+        },
+    },
 });
 
-export const movieSearchActions = movieSearchSlice.actions;
+export const { getCheckedGeneres, removeCheckedGenres } = movieSearchSlice.actions;
 
 export default movieSearchSlice.reducer;

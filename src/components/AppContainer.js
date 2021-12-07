@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import LeftColumnTitle from "./LeftColumnTitle";
 import LeftColumnSearch from "./LeftColumnSearch";
-import LeftColumnInputs from "./LeftColumnGenres";
+import LeftColumnGenres from "./LeftColumnGenres";
 import LeftColumnTheme from "./LeftColumnTheme";
 import MoviePoster from "./MoviePoster";
 
@@ -16,14 +16,16 @@ const AppContainer = (props) => {
         setDarkMode((state) => !state);
     };
 
-    console.log(darkMode);
+    const allGenreList = [...new Set(movieList.map((movie) => movie.genre).flat())]; //getting all the unique genres, and putting them in array
+
+    console.log(allGenreList);
 
     return (
         <div className={!darkMode ? "container" : "container-dark"}>
             <div className="container-left">
                 <LeftColumnTitle />
                 <LeftColumnSearch />
-                <LeftColumnInputs />
+                <LeftColumnGenres genres={allGenreList} />
                 <LeftColumnTheme changeMode={darkModeHandler} />
             </div>
 

@@ -234,7 +234,7 @@ export const movieList = [
         director: ["Joss Whedon"],
         writers:["Joss Whedon", "Jack Kirby"],
         actors: ["Robert Downey Jr", "Chris Evans", "Mark Ruffalo", "Chris Hemsworth", "Scarlett Johansson", "Jeremy Renner", "James Spader", "Samuel L. Jackson", "Don Cheadle", "Aaron Tylor-Johnson", "Elizabeth Olsen", "Paul Bettany", "Anthony Mackie"],
-        genre: ["Action", "Adventure", "Sci-fi", "Comic Book"],
+        genre: ["Action", "Adventure", "Sci-Fi", "Comic Book"],
         links: {
             imdb: "https://www.imdb.com/title/tt2395427/",
             rottenTomatoes: "https://www.rottentomatoes.com/m/avengers_age_of_ultron",
@@ -522,7 +522,7 @@ export const movieList = [
         director: ["John Carpenter"],
         writers:["John Carpenter", "Nick Castle", "Debra Hill"],
         actors: ["Kurt Russell", "Steve Buscemi", "Stacy Keach", "A.J. Langer", "Georges Corraface", "Michelle Forbes", "Pam Grier", "Bruce Campbell"],
-        genre: ["Action", "Advenutre", "Sci-Fi"],
+        genre: ["Action", "Adventure", "Sci-Fi"],
         links: {
             imdb: "https://www.imdb.com/title/tt0116225/",
             rottenTomatoes: "https://www.rottentomatoes.com/m/escape_from_la",
@@ -955,7 +955,7 @@ export const movieList = [
         director: ["Cory Joji Fukunaga"],
         actors: ["Daniel Craig", "Ana de Armas", "Rami Malek", "Léa Seydoux", "Lashana Lynch", "Ralph Finnes", "Ben Whishaw", "Naomie Harris"],
         writers: ["Neal Purvis", "Robert Wade", "Cary Joji Fukunaga"],
-        genre: ["Action", "Adenture", "Thriller"],
+        genre: ["Action", "Adventure", "Thriller"],
         links: {
             imdb: "https://www.imdb.com/title/tt2382320/",
             rottenTomatoes: "https://www.rottentomatoes.com/m/no_time_to_die_2021",

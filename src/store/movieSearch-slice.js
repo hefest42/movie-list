@@ -13,7 +13,7 @@ const movieSearchSlice = createSlice({
             state.checkedGenres.push(action.payload);
         },
         removeCheckedGenres(state, action) {
-            state.checkedGenres.filter((genre) => genre === action.payload);
+            state.checkedGenres = state.checkedGenres.filter((genre) => genre !== action.payload);
         },
     },
 });

@@ -16,7 +16,14 @@ const AppContainer = (props) => {
         setDarkMode((state) => !state);
     };
 
-    const allGenreList = [...new Set(movieList.map((movie) => movie.genre).flat())]; //getting all the unique genres, and putting them in array
+    const allGenreList = [
+        ...new Set(
+            movieList
+                .map((movie) => movie.genre)
+                .flat()
+                .sort((a, b) => a.localeCompare(b))
+        ),
+    ]; //getting all the unique genres, and putting them in array in alphabetical order
 
     console.log(allGenreList);
 

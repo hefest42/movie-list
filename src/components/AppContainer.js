@@ -16,6 +16,8 @@ const AppContainer = (props) => {
         setDarkMode((state) => !state);
     };
 
+    console.log(darkMode);
+
     return (
         <div className={!darkMode ? "container" : "container-dark"}>
             <div className="container-left">
@@ -27,7 +29,7 @@ const AppContainer = (props) => {
 
             <div className="container-right">
                 {movieList.map((movie) => (
-                    <MoviePoster posterLink={movie.links.poster} movieTitle={movie.name} />
+                    <MoviePoster key={movie.id} posterLink={movie.links.poster} movieTitle={movie.name} />
                 ))}
             </div>
         </div>

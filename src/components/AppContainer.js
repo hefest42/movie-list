@@ -25,8 +25,6 @@ const AppContainer = (props) => {
         ),
     ]; //getting all the unique genres, and putting them in array in alphabetical order
 
-    console.log(allGenreList);
-
     return (
         <div className={!darkMode ? "container" : "container-dark"}>
             <div className="container-left">

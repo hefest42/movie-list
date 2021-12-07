@@ -24,10 +24,15 @@ html {
     min-height: 100vh;
     max-height: auto;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-area: "left right";
 
     &-left {
-        width: 15%;
+        position: fixed;
+        grid-area: "left";
+        width: 18rem;
+        height: 100vh;
         border-right: 1px solid $main-color;
         font-weight: bold;
 
@@ -37,7 +42,9 @@ html {
     }
 
     &-right {
-        width: 85%;
+        position: absolute;
+        left: 18rem;
+        grid-area: "right";
         height: auto;
         display: flex;
         flex-wrap: wrap;

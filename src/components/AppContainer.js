@@ -6,19 +6,28 @@ import LeftColumnGenres from "./LeftColumnGenres";
 import LeftColumnTheme from "./LeftColumnTheme";
 import MoviePoster from "./MoviePoster";
 
+import { useSelector } from "react-redux";
+
 import { movieList } from "../store/movieList";
+
+const compareTwoArrays = (arr1, arr2) => {
+    return arr2.every((value) => arr1.includes(value));
+};
 
 const AppContainer = (props) => {
     const [darkMode, setDarkMode] = useState(false);
+    const filterValues = useSelector((state) => state.movieSearch.checkedGenres);
 
     //changing light/dark mode
     const darkModeHandler = () => {
         setDarkMode((state) => !state);
     };
 
+    const filteredOutMovies = movieList.filter((movie) => compareTwoArrays(movie.genre, filterValues)); // filtering depending on which checkboxes are clicked
+
     const allGenreList = [
         ...new Set(
-            movieList
+            filteredOutMovies
                 .map((movie) => movie.genre)
                 .flat()
                 .sort((a, b) => a.localeCompare(b))
@@ -35,7 +44,7 @@ const AppContainer = (props) => {
             </div>
 
             <div className="container-right">
-                {movieList.map((movie) => (
+                {filteredOutMovies.map((movie) => (
                     <MoviePoster key={movie.id} posterLink={movie.links.poster} movieTitle={movie.name} />
                 ))}
             </div>

@@ -1,8 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+import { movieList } from "./movieList";
+
 const movieSearchSlice = createSlice({
     name: "movieSearch",
-    initialState: {},
+    initialState: {
+        allMovies: movieList,
+        filteredMovies: [],
+    },
     reducers: {},
 });
 

@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 
 import { useDispatch } from "react-redux";
-import { setSearchTerm, filterMoviesWithSearchTerm } from "../store/movieSearch-slice";
+import { setSearchTerm, filterMoviesWithSearchTerm, resetMovieSearch } from "../store/movieSearch-slice";
 
 const LeftColumnSearch = () => {
     const [showResetButton, setShowResetButton] = useState(false);
@@ -22,6 +22,7 @@ const LeftColumnSearch = () => {
 
     const resetButtonHandler = () => {
         setShowResetButton(false);
+        dispatch(resetMovieSearch());
     };
 
     return (

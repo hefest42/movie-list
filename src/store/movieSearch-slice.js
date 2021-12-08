@@ -48,7 +48,7 @@ const movieSearchSlice = createSlice({
     },
 });
 
-export const { getCheckedGeneres, removeCheckedGenres, setSearchTerm, filterMoviesWithSearchTerm } =
+export const { getCheckedGeneres, removeCheckedGenres, setSearchTerm, filterMoviesWithSearchTerm, resetMovieSearch } =
     movieSearchSlice.actions;
 
 export default movieSearchSlice.reducer;

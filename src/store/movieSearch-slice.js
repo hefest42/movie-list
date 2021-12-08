@@ -14,6 +14,7 @@ const movieSearchSlice = createSlice({
         getCheckedGeneres(state, action) {
             state.checkedGenres.push(action.payload);
         },
+
         removeCheckedGenres(state, action) {
             state.checkedGenres = state.checkedGenres.filter((genre) => genre !== action.payload);
         },
@@ -27,6 +28,7 @@ const movieSearchSlice = createSlice({
 
             state.searchTerm = term;
         },
+
         filterMoviesWithSearchTerm(state) {
             const searchByName = movieList.filter((movie) => movie.name === state.searchTerm);
             const searchByActor = movieList.filter((movie) => movie.actors.includes(state.searchTerm));

@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 
 import { useDispatch } from "react-redux";
-import { setSearchTerm } from "../store/movieSearch-slice";
+import { setSearchTerm, filterMoviesWithSearchTerm } from "../store/movieSearch-slice";
 
 const LeftColumnSearch = () => {
     const dispatch = useDispatch();
@@ -12,6 +12,7 @@ const LeftColumnSearch = () => {
 
         const searchTermValue = searchRef.current.value;
         dispatch(setSearchTerm(searchTermValue));
+        dispatch(filterMoviesWithSearchTerm());
 
         searchRef.current.value = "";
     };

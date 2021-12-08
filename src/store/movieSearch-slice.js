@@ -20,14 +20,27 @@ const movieSearchSlice = createSlice({
         },
 
         setSearchTerm(state, action) {
-            state.searchTerm = action.payload;
+            const term = action.payload
+                .toLowerCase()
+                .split(" ")
+                .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+                .join(" ");
+
+            state.searchTerm = term;
         },
         filterMoviesWithSearchTerm(state) {
+            const searchByName = movieList.filter((movie) => movie.name === state.searchTerm);
             const searchByActor = movieList.filter((movie) => movie.actors.includes(state.searchTerm));
             const searchByDirector = movieList.filter((movie) => movie.director.includes(state.searchTerm));
             const searchByWriter = movieList.filter((movie) => movie.writers.includes(state.searchTerm));
 
-            console.log(searchByDirector);
+            const combinedSearchedResults = [
+                ...new Set(searchByName.concat(searchByActor).concat(searchByDirector).concat(searchByWriter)),
+            ];
+
+            console.log(combinedSearchedResults);
+
+            state.movies = combinedSearchedResults;
         },
     },
 });

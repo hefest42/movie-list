@@ -10,10 +10,12 @@ const LeftColumnSearch = () => {
 
     const searchFormHandler = (e) => {
         e.preventDefault();
+        const searchTermValue = searchRef.current.value;
+
+        if (searchTermValue === "") return;
 
         setShowResetButton(true);
 
-        const searchTermValue = searchRef.current.value;
         dispatch(setSearchTerm(searchTermValue));
         dispatch(filterMoviesWithSearchTerm());
 
@@ -31,7 +33,6 @@ const LeftColumnSearch = () => {
             <div>
                 <button>Search</button>
                 {showResetButton && <button onClick={resetButtonHandler}>Reset Search</button>}
-                {/* <button>Reset</button> */}
             </div>
         </form>
     );

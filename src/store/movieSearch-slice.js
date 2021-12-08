@@ -9,7 +9,6 @@ const movieSearchSlice = createSlice({
         searchedForMovies: [],
         checkedGenres: [],
         searchTerm: "",
-        testMovies: [],
     },
     reducers: {
         getCheckedGeneres(state, action) {
@@ -41,6 +40,10 @@ const movieSearchSlice = createSlice({
             console.log(combinedSearchedResults);
 
             state.movies = combinedSearchedResults;
+        },
+
+        resetMovieSearch(state) {
+            state.movies = movieList;
         },
     },
 });

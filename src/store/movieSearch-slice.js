@@ -30,7 +30,9 @@ const movieSearchSlice = createSlice({
         },
 
         filterMoviesWithSearchTerm(state) {
-            const searchByName = movieList.filter((movie) => movie.name === state.searchTerm);
+            const searchByName = movieList.filter(
+                (movie) => movie.name.toLowerCase() === state.searchTerm.toLowerCase()
+            );
             const searchByActor = movieList.filter((movie) => movie.actors.includes(state.searchTerm));
             const searchByDirector = movieList.filter((movie) => movie.director.includes(state.searchTerm));
             const searchByWriter = movieList.filter((movie) => movie.writers.includes(state.searchTerm));

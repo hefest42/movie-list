@@ -9,7 +9,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Navigate to="/movies" />} />
                 <Route path="/movies" element={<AppContainer />} />
-                <Route path="/movies/:movieID" element={<MainMovie />} />
+                <Route path="/movies/:movieName" element={<MainMovie />} />
             </Routes>
         </div>
     );

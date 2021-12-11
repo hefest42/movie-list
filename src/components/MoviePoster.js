@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 
 const MoviePoster = ({ posterLink, movieTitle }) => {
     const [posterActive, setPosterActive] = useState(false);
-    const movieLinkTitle = movieTitle.toLowerCase().split(" ").join("-");
-
+    const movieLinkTitle = movieTitle
+        .replace(/[^a-zA-Z ]/g, "")
+        .toLowerCase()
+        .split(" ")
+        .join("-");
     return (
         <div className="poster-container">
             <div
@@ -16,7 +19,7 @@ const MoviePoster = ({ posterLink, movieTitle }) => {
                     setPosterActive(false);
                 }}
             >
-                <Link to={`movies/${movieLinkTitle}`}>
+                <Link to={`${movieLinkTitle}`}>
                     <img src={posterLink} alt={`${movieTitle} poster`} />{" "}
                 </Link>
             </div>

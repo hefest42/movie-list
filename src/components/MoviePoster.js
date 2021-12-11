@@ -5,6 +5,7 @@ const MoviePoster = ({ posterLink, movieTitle }) => {
     const [posterActive, setPosterActive] = useState(false);
     const movieLinkTitle = movieTitle
         .replace(/[^a-z\d\s]+/gi, "")
+        .replace(/\s+/g, " ")
         .toLowerCase()
         .split(" ")
         .join("-");

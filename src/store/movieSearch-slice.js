@@ -31,7 +31,7 @@ const movieSearchSlice = createSlice({
 
         //prettier-ignore
         filterMoviesWithSearchTerm(state) {
-            const searchByName = movieList.filter(movie => movie.name.replace(/[^a-zA-Z ]/g, "").toLowerCase() === state.searchTerm.replace(/[^a-zA-Z ]/g, "").toLowerCase())
+            const searchByName = movieList.filter(movie => movie.name.replace(/[^a-z\d\s]+/gi, "").toLowerCase() === state.searchTerm.replace(/[^a-z\d\s]+/gi, "").toLowerCase())
             const searchByActor = movieList.filter((movie) => movie.actors.includes(state.searchTerm));
             const searchByDirector = movieList.filter((movie) => movie.director.includes(state.searchTerm));
             const searchByWriter = movieList.filter((movie) => movie.writers.includes(state.searchTerm));

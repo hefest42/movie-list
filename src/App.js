@@ -1,11 +1,18 @@
 import AppContainer from "./components/AppContainer";
+import MainMovie from "./components/MainMovie";
+
+import { Route, Routes, Navigate } from "react-router-dom";
 
 function App() {
-  return (
-    <div>
-      <AppContainer />
-    </div>
-  );
+    return (
+        <div>
+            <Routes>
+                <Route path="/" element={<Navigate to="/movies" />} />
+                <Route path="/movies" element={<AppContainer />} />
+                <Route path="/movies/:movieID" element={<MainMovie />} />
+            </Routes>
+        </div>
+    );
 }
 
 export default App;

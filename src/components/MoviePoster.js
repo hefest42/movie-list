@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const MoviePoster = ({ posterLink, movieTitle }) => {
     const [posterActive, setPosterActive] = useState(false);
     const movieLinkTitle = movieTitle
-        .replace(/[^a-zA-Z ]/g, "")
+        .replace(/[^a-z\d\s]+/gi, "")
         .toLowerCase()
         .split(" ")
         .join("-");

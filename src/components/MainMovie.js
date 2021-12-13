@@ -43,7 +43,7 @@ const MainMovie = () => {
                 </div>
 
                 <h1>ACTORS</h1>
-                <ul>
+                <ul className="info_container_actors">
                     {mainMovie.actors.map((actor, i) => (
                         <li key={i}>{actor}</li>
                     ))}

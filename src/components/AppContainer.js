@@ -7,6 +7,7 @@ import LeftColumnTheme from "./LeftColumnTheme";
 import MoviePoster from "./MoviePoster";
 
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const compareTwoArrays = (arr1, arr2) => {
     return arr2.every((value) => arr1.includes(value));
@@ -43,9 +44,20 @@ const AppContainer = (props) => {
             </div>
 
             <div className="container-right">
-                {filteredOutMovies.map((movie) => (
-                    <MoviePoster key={movie.id} movie={movie} />
-                ))}
+                {filteredOutMovies.map((movie) => {
+                    const movieLinkTitle = movie.name
+                        .replace(/[^a-z\d\s]+/gi, "")
+                        .replace(/\s+/g, " ")
+                        .toLowerCase()
+                        .split(" ")
+                        .join("-");
+
+                    return (
+                        <Link to={`${movieLinkTitle}`}>
+                            <MoviePoster key={movie.id} movie={movie} />
+                        </Link>
+                    );
+                })}
             </div>
         </div>
     );

@@ -14,6 +14,8 @@ const MainMovie = () => {
             params.movieName.split("-").join(" ").toLowerCase()
     );
 
+    const { imdb, rottenTomatoes } = mainMovie.links;
+
     return (
         <div className="main-movie__container">
             <div className="info-container">
@@ -48,6 +50,16 @@ const MainMovie = () => {
                         <li key={i}>{actor}</li>
                     ))}
                 </ul>
+
+                <h1>LINKS</h1>
+                <div className="info-container__writers">
+                    <a href={imdb} target="_blank" rel="noreferrer">
+                        imdb
+                    </a>
+                    <a href={rottenTomatoes} target="_blank" rel="n noreferrer">
+                        Rotten Tomatoes
+                    </a>
+                </div>
             </div>
         </div>
     );

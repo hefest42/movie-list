@@ -14,9 +14,43 @@ const MainMovie = () => {
             params.movieName.split("-").join(" ").toLowerCase()
     );
 
-    console.log(mainMovie);
+    return (
+        <div className="main-movie__container">
+            <div className="info-container">
+                <img src={mainMovie.links.poster} alt={`${mainMovie.name}'s poster`} />
+                <div className="info-container__title">{mainMovie.name}</div>
+                <div className="info-container__genres">
+                    {mainMovie.genre.map((g, i) => (
+                        <div key={i}>{g}</div>
+                    ))}
+                </div>
 
-    return <div>{mainMovie.name}</div>;
+                <h1>SUMMARY</h1>
+                <div>{mainMovie.summary}</div>
+
+                <h1>DIRECTORS</h1>
+                <div className="info-container__director">
+                    {mainMovie.director.map((dir, i) => (
+                        <div key={i}>{dir}</div>
+                    ))}
+                </div>
+
+                <h1>WRITERS</h1>
+                <div className="info-container__writers">
+                    {mainMovie.writers.map((dir, i) => (
+                        <div key={i}>{dir}</div>
+                    ))}
+                </div>
+
+                <h1>ACTORS</h1>
+                <ul>
+                    {mainMovie.actors.map((actor, i) => (
+                        <li key={i}>{actor}</li>
+                    ))}
+                </ul>
+            </div>
+        </div>
+    );
 };
 
 export default MainMovie;

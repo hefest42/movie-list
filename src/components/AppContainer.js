@@ -53,7 +53,7 @@ const AppContainer = (props) => {
                         .join("-");
 
                     return (
-                        <Link to={`${movieLinkTitle}`}>
+                        <Link key={movie.id} to={`${movieLinkTitle}`}>
                             <MoviePoster key={movie.id} movie={movie} />
                         </Link>
                     );

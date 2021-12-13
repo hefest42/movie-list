@@ -44,7 +44,7 @@ const AppContainer = (props) => {
 
             <div className="container-right">
                 {filteredOutMovies.map((movie) => (
-                    <MoviePoster key={movie.id} posterLink={movie.links.poster} movieTitle={movie.name} />
+                    <MoviePoster key={movie.id} movie={movie} />
                 ))}
             </div>
         </div>

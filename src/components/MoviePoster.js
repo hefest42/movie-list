@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const MoviePoster = ({ posterLink, movieTitle }) => {
+const MoviePoster = ({ movie }) => {
     const [posterActive, setPosterActive] = useState(false);
-    const movieLinkTitle = movieTitle
+    const movieLinkTitle = movie.name
         .replace(/[^a-z\d\s]+/gi, "")
         .replace(/\s+/g, " ")
         .toLowerCase()
@@ -21,11 +21,11 @@ const MoviePoster = ({ posterLink, movieTitle }) => {
                 }}
             >
                 <Link to={`${movieLinkTitle}`}>
-                    <img src={posterLink} alt={`${movieTitle} poster`} />{" "}
+                    <img src={movie.links.poster} alt={`${movie.name} poster`} />{" "}
                 </Link>
             </div>
 
-            <div className={!posterActive ? "poster-title" : "poster-title poster-title-active"}>{movieTitle}</div>
+            <div className={!posterActive ? "poster-title" : "poster-title poster-title-active"}>{movie.name}</div>
         </div>
     );
 };

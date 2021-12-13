@@ -5,13 +5,17 @@ import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 
 const MainMovie = () => {
+    window.scrollTo(0, 0);
+
     const params = useParams();
     const movies = useSelector((state) => state.movieSearch.movies);
 
     const [mainMovie] = movies.filter(
         (movie) =>
-            movie.name.replace(/[^a-z\d\s]+/gi, "").toLowerCase() ===
-            params.movieName.split("-").join(" ").toLowerCase()
+            movie.name
+                .replace(/[^a-z\d\s]+/gi, "")
+                .replace(/\s+/g, " ")
+                .toLowerCase() === params.movieName.split("-").join(" ").toLowerCase()
     );
 
     const { imdb, rottenTomatoes } = mainMovie.links;

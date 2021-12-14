@@ -461,7 +461,7 @@ export const movieList = [
         summary:"An unlikely partnership between a Highway Patrol Officer, two criminals and a station secretary is formed to defend a defunct Los Angeles precinct office against a siege by a bloodthirsty street gang.",
         director: ["John Carpenter"],
         writers:["John Carpenter"],
-        actors: ["Austin Stoker", "Darwin Joston", "Laurie Zimmer", "Martin West", "Tony Burton", ""],
+        actors: ["Austin Stoker", "Darwin Joston", "Laurie Zimmer", "Martin West", "Tony Burton",],
         genre: ["Action", "Crime", "Thriller"],
         links: {
             imdb: "https://www.imdb.com/title/tt0074156/",

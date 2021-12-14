@@ -6,7 +6,7 @@ const BackButton = () => {
     return (
         <Link to={`/movies`}>
             <div className="home-button home-button__active">
-                <button>&#8249;</button>
+                <div>&#8249;</div>
             </div>
         </Link>
     );

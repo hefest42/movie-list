@@ -923,7 +923,7 @@ export const movieList = [
         name: "Princess Mononoke",
         releaseYear: "1997",
         runtime: "2h 14m",
-        summary: "",
+        summary: "ADD THIS LATER",
         director: ["Hayao Miyazaki"],
         actors: ["Yôji Matsuda", "Yuriko Ishida", "Yûko Tanaka", "Billy Crudup", "Billy Bob Thornton", "Minnie Driver", "John DiMaggio", "Claire Danes"],
         writers: ["Hayao Miyazaki"],

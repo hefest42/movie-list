@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 const BackButton = () => {
     return (
         <Link to={`/movies`}>
-            <button className="home-button">&#8249;</button>;
+            <div className="home-button home-button__active">
+                <button>&#8249;</button>
+            </div>
         </Link>
     );
 };

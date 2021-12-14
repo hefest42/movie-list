@@ -1,0 +1,21 @@
+.home-button {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: black;
+    width: 3rem;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: 200% 100%;
+    background-image: linear-gradient(to left, $main-color 50%, black 50%);
+    transition: background-position 0.3s;
+}
+
+.home-button:hover {
+    background-position: 100% 0;
+}

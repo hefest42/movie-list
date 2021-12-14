@@ -24,6 +24,8 @@ const AppContainer = (props) => {
 
     const filteredOutMovies = MOVIES.filter((movie) => compareTwoArrays(movie.genre, filterValues)); // filtering depending on which checkboxes are clicked
 
+    console.log(filteredOutMovies);
+
     const allGenreList = [
         ...new Set(
             filteredOutMovies

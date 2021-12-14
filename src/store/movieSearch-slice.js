@@ -45,6 +45,7 @@ const movieSearchSlice = createSlice({
 
         resetMovieSearch(state) {
             state.movies = movieList;
+            state.checkedGenres = [];
         },
     },
 });

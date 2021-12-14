@@ -32,7 +32,7 @@ const MainMovie = () => {
                 </div>
 
                 <h1>SUMMARY</h1>
-                <div>{mainMovie.summary}</div>
+                <div className="info-container__summary">{mainMovie.summary}</div>
 
                 <h1>DIRECTORS</h1>
                 <div className="info-container__director">
@@ -49,14 +49,14 @@ const MainMovie = () => {
                 </div>
 
                 <h1>ACTORS</h1>
-                <ul className="info_container_actors">
+                <ul className="info_container__actors">
                     {mainMovie.actors.map((actor, i) => (
                         <li key={i}>{actor}</li>
                     ))}
                 </ul>
 
                 <h1>LINKS</h1>
-                <div className="info-container__writers">
+                <div className="info-container__links">
                     <a href={imdb} target="_blank" rel="noreferrer">
                         imdb
                     </a>

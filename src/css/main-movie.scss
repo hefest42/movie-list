@@ -12,33 +12,60 @@
 
 .info-container {
     width: 50rem;
-    height: auto; // change this
+    height: auto;
 
     img {
         width: 100%;
     }
 
     &__title {
+        font-size: 3rem;
         height: 5rem;
         width: 100%;
         text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    &__summary {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    &__director,
+    &__genres,
+    &__writers,
+    &__links {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            color: $main-color;
+        }
     }
 }
 
-.info-container__director,
-.info-container__genres,
-.info-container__writers {
+.info_container__actors {
     width: 100%;
+    height: auto;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style: none;
+    margin-left: 7rem;
 
-    display: flex;
-    justify-content: space-between;
+    li {
+        padding: 0.3rem;
+    }
 }
 
+// DIVIDERS
 h1 {
     overflow: hidden;
     text-align: center;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 h1:before,

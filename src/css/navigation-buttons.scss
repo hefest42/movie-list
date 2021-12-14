@@ -13,7 +13,7 @@
 
     background-size: 200% 100%;
     background-image: linear-gradient(to left, $main-color 50%, black 50%);
-    transition: background-position 0.3s;
+    transition: background-position 0.2s;
 
     div {
         width: 100%;
@@ -21,6 +21,8 @@
         font-size: 3rem;
         font-weight: bold;
         color: $main-color;
+        transform: translateX(50%);
+        transition: all 0.2s;
     }
 }
 
@@ -29,6 +31,7 @@
 
     div {
         color: black;
-        transition: all 0.3s;
+        transform: translateX(0);
+        transition: all 0.2s;
     }
 }

@@ -58,7 +58,7 @@ const MainMovie = () => {
                 <h1>LINKS</h1>
                 <div className="info-container__links">
                     <a href={imdb} target="_blank" rel="noreferrer">
-                        imdb
+                        IMDb
                     </a>
                     <a href={rottenTomatoes} target="_blank" rel="n noreferrer">
                         Rotten Tomatoes

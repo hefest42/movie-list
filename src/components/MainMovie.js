@@ -1,5 +1,7 @@
 import React from "react";
 
+import BackButton from "./UI/BackButton";
+
 import { useSelector } from "react-redux";
 
 import { useParams } from "react-router-dom";
@@ -65,6 +67,8 @@ const MainMovie = () => {
                     </a>
                 </div>
             </div>
+
+            <BackButton />
         </div>
     );
 };

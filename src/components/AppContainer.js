@@ -12,7 +12,7 @@ const compareTwoArrays = (arr1, arr2) => {
     return arr2.every((value) => arr1.includes(value));
 };
 
-const AppContainer = (props) => {
+const AppContainer = () => {
     const [darkMode, setDarkMode] = useState(false);
     const filterValues = useSelector((state) => state.movieSearch.checkedGenres);
     const MOVIES = useSelector((state) => state.movieSearch.movies);
@@ -31,7 +31,7 @@ const AppContainer = (props) => {
                 .flat()
                 .sort((a, b) => a.localeCompare(b))
         ),
-    ]; //getting all the unique genres, and putting them in array in alphabetical order
+    ]; //getting all the unique genres, and putting them in alphabetical order
 
     return (
         <div className={!darkMode ? "container" : "container-dark"}>

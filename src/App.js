@@ -10,6 +10,7 @@ function App() {
                 <Route path="/" element={<Navigate to="/movies" />} />
                 <Route path="/movies" element={<AppContainer />} />
                 <Route path="/movies/:movieName" element={<MainMovie />} />
+                <Route path="/error-page" element={<p>test</p>} />
             </Routes>
         </div>
     );

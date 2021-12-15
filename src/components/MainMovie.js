@@ -4,7 +4,7 @@ import BackButton from "./UI/BackButton";
 
 import { useSelector } from "react-redux";
 
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 
 const MainMovie = () => {
     window.scrollTo(0, 0);
@@ -19,6 +19,10 @@ const MainMovie = () => {
                 .replace(/\s+/g, " ")
                 .toLowerCase() === params.movieName.split("-").join(" ").toLowerCase()
     );
+
+    if (mainMovie === undefined) {
+        return <Navigate to="/error-page" />;
+    }
 
     const { imdb, rottenTomatoes } = mainMovie.links;
 

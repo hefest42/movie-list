@@ -8,13 +8,13 @@ import { Link } from "react-router-dom";
 const BackButton = () => {
     const dispatch = useDispatch();
 
-    const resetButtonHandler = () => {
-        dispatch(resetMovieSearch());
-    };
+    // const resetButtonHandler = () => {
+    //     dispatch(resetMovieSearch());
+    // };
 
     return (
         <Link to={`/movies`}>
-            <div className="home-button home-button__active" onClick={resetButtonHandler}>
+            <div className="home-button home-button__active">
                 <div>&#8249;</div>
             </div>
         </Link>

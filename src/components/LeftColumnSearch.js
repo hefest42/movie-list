@@ -1,12 +1,17 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 
-import { useDispatch } from "react-redux";
-import { setSearchTerm, filterMoviesWithSearchTerm, resetMovieSearch } from "../store/movieSearch-slice";
+import { useDispatch, useSelector } from "react-redux";
+import {
+    setSearchTerm,
+    filterMoviesWithSearchTerm,
+    resetMovieSearch,
+    setDisplayResetButton,
+} from "../store/movieSearch-slice";
 
 const LeftColumnSearch = () => {
-    const [showResetButton, setShowResetButton] = useState(false);
     const dispatch = useDispatch();
     const searchRef = useRef();
+    const resetButtonDisplay = useSelector((state) => state.movieSearch.displayResetButton);
 
     const searchFormHandler = (e) => {
         e.preventDefault();
@@ -14,7 +19,7 @@ const LeftColumnSearch = () => {
 
         if (searchTermValue === "") return;
 
-        setShowResetButton(true);
+        dispatch(setDisplayResetButton(true));
 
         dispatch(setSearchTerm(searchTermValue));
         dispatch(filterMoviesWithSearchTerm());
@@ -23,7 +28,7 @@ const LeftColumnSearch = () => {
     };
 
     const resetButtonHandler = () => {
-        setShowResetButton(false);
+        dispatch(setDisplayResetButton(false));
         dispatch(resetMovieSearch());
     };
 
@@ -32,7 +37,7 @@ const LeftColumnSearch = () => {
             <input type="text" placeholder="Search..." ref={searchRef} />
             <div>
                 <button>Search</button>
-                {showResetButton && <button onClick={resetButtonHandler}>Reset Search</button>}
+                {resetButtonDisplay && <button onClick={resetButtonHandler}>Reset Search</button>}
             </div>
         </form>
     );

@@ -7,19 +7,22 @@ import LeftColumnTheme from "./LeftColumnTheme";
 import MoviePoster from "./MoviePoster";
 
 import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { setDarkTheme } from "../store/movieSearch-slice";
 
 const compareTwoArrays = (arr1, arr2) => {
     return arr2.every((value) => arr1.includes(value));
 };
 
 const AppContainer = () => {
-    const [darkMode, setDarkMode] = useState(false);
     const filterValues = useSelector((state) => state.movieSearch.checkedGenres);
+    const darkMode = useSelector((state) => state.movieSearch.darkTheme);
     const MOVIES = useSelector((state) => state.movieSearch.movies);
+    const dispatch = useDispatch();
 
     //changing light/dark mode
     const darkModeHandler = () => {
-        setDarkMode((state) => !state);
+        dispatch(setDarkTheme());
     };
 
     const filteredOutMovies = MOVIES.filter((movie) => compareTwoArrays(movie.genre, filterValues)); // filtering depending on which checkboxes are clicked

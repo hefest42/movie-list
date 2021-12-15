@@ -10,6 +10,7 @@ const movieSearchSlice = createSlice({
         checkedGenres: [],
         searchTerm: "",
         displayResetButton: false,
+        darkTheme: false,
     },
     reducers: {
         getCheckedGeneres(state, action) {
@@ -52,6 +53,10 @@ const movieSearchSlice = createSlice({
         setDisplayResetButton(state, action) {
             state.displayResetButton = action.payload;
         },
+
+        setDarkTheme(state, action) {
+            state.darkTheme = !state.darkTheme;
+        },
     },
 });
 
@@ -62,6 +67,7 @@ export const {
     filterMoviesWithSearchTerm,
     resetMovieSearch,
     setDisplayResetButton,
+    setDarkTheme,
 } = movieSearchSlice.actions;
 
 export default movieSearchSlice.reducer;
